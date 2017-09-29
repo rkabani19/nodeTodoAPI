@@ -7,6 +7,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   }
   console.log('Connected to the MogoDB server');
 
+
+  // How to insert data
   // db.collection('Todos').insertOne({
   //   text: 'Something to do',
   //   completed: false

@@ -6,6 +6,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   }
   console.log('Connected to the MogoDB server');
 
+  //Find with object ID
   // db.collection('Todos').find({
   //     _id: new ObjectID('59c13939d8aa45a848b15e9b'
   //   )}).toArray().then((docs) => {
@@ -15,6 +16,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   //   console.log("Unable to fetch todos", err)
   // })
 
+  // Find and output count
   // db.collection('Todos').find().count().then((count) => {
   //   console.log('Todos count: ' + count);
   // }, (err) => {
