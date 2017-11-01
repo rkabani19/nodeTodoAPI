@@ -49,8 +49,7 @@ app.get('/todos/:todoId', (req, res) => {
 
 })
 
-/*
-app.get('/todos/delete/:todoId', (req, res) => {
+app.delete('/todos/:todoId', (req, res) => {
   var todoId = req.params.todoId;
 
   if (!ObjectID.isValid(todoId)) {
@@ -61,15 +60,11 @@ app.get('/todos/delete/:todoId', (req, res) => {
     if(!todo){
       return res.status(404).send();
     }
-    res.send({
-      message: 'Todo successfully delted.'.
-      _id: todoId
-  });
+    res.send(todo);
   }).catch((e) => {
     res.status(400).send();
   })
 })
-*/
 
 app.listen(port, () => {
   console.log(`Started server on ${port}`)
